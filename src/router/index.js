@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import BlueLizard from '@/components/BlueLizard'
+import TreeViewer from '@/components/TreeViewer'
 
 Vue.use(Router)
 
@@ -8,8 +8,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'BlueLizard',
-      component: BlueLizard
+      name: 'TreeViewer',
+      component: TreeViewer
     }
   ]
 })

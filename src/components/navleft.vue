@@ -23,12 +23,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #navleft {
-  height: 100%;
-  width: 20%;
   background-color: #f1f1f1;
-  position: fixed;
   overflow: auto;
-  margin: 0px;
   padding: 0px;
 }
 </style>
