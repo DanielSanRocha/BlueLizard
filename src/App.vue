@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <navleft class="navleft"/>
-    <router-view class="content"/>
+    <router-view ref="TreeViewer" class="content"/>
   </div>
 </template>
 
@@ -22,7 +22,8 @@ export default {
   },
   methods: {
     NeighborJoining: function (matrix) {
-      NeighborJoining.apply(matrix)
+      const tree = NeighborJoining.apply(matrix)
+      this.$refs.TreeViewer.setTree(tree)
     }
   }
 }
