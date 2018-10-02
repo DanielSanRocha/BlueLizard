@@ -10,7 +10,6 @@ import Vue from 'vue'
 import navleft from '@/components/navleft'
 import VueNumeric from 'vue-numeric'
 import VueNumberInput from '@chenfengyuan/vue-number-input'
-import * as vue2vis from 'vue2vis'
 
 const NeighborJoining = require('./algorithms/NeighborJoining')
 
@@ -20,7 +19,6 @@ export default {
   created: function () {
     Vue.use(VueNumeric)
     Vue.component(VueNumberInput.name, VueNumberInput)
-    Vue.component('timeline', vue2vis.Timeline)
   },
   methods: {
     NeighborJoining: function (matrix) {
